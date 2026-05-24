@@ -5,21 +5,21 @@
 class Observo < Formula
   desc "CLI for pushing CI test runs, coverage, and live status to Observo"
   homepage "https://github.com/observo-ai/observo-cli"
-  version "0.6.0"
+  version "0.6.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/observo-ai/observo-cli/releases/download/v0.6.0/observo_0.6.0_darwin_amd64.tar.gz"
-      sha256 "2b0272ec91a0634752fc41b074a0363bff4888d3b5767d00cec512e657248079"
+      url "https://github.com/observo-ai/observo-cli/releases/download/v0.6.1/observo_0.6.1_darwin_amd64.tar.gz"
+      sha256 "cbd8ad88cbb826e1fd7e043e4278f723776c6de08fa9b9868ff66c28483052db"
 
       define_method(:install) do
         bin.install "observo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/observo-ai/observo-cli/releases/download/v0.6.0/observo_0.6.0_darwin_arm64.tar.gz"
-      sha256 "35a166696bc46cc8ad32dc947f8fa78327e99409967b62654ab15821d09856f4"
+      url "https://github.com/observo-ai/observo-cli/releases/download/v0.6.1/observo_0.6.1_darwin_arm64.tar.gz"
+      sha256 "83216e163e63bd3316bd0d078674435ecd1c68e4062046222a3dd09da441ffa6"
 
       define_method(:install) do
         bin.install "observo"
@@ -29,15 +29,15 @@ class Observo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/observo-ai/observo-cli/releases/download/v0.6.0/observo_0.6.0_linux_amd64.tar.gz"
-      sha256 "372b4efd3a6c24b5ab9f4965092422b23113c431a2e501aabb5219564811abc6"
+      url "https://github.com/observo-ai/observo-cli/releases/download/v0.6.1/observo_0.6.1_linux_amd64.tar.gz"
+      sha256 "934dd4086161d1617440e6da02073731a675a61ac7d1ca4ecc52920ccad1841f"
       define_method(:install) do
         bin.install "observo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/observo-ai/observo-cli/releases/download/v0.6.0/observo_0.6.0_linux_arm64.tar.gz"
-      sha256 "9d803e4c364a8e709217ab4cc0ee794e870bc33b1598c21679b5269f86460894"
+      url "https://github.com/observo-ai/observo-cli/releases/download/v0.6.1/observo_0.6.1_linux_arm64.tar.gz"
+      sha256 "c0c5e4de7a861b9362ef146990b77e761608ded4904944c0f89472c9bb257816"
       define_method(:install) do
         bin.install "observo"
       end
