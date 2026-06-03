@@ -11,7 +11,7 @@ class Observo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/observo-ai/observo-cli/releases/download/v0.8.0/observo_0.8.0_darwin_amd64.tar.gz"
-      sha256 "215380ea06800991a2b3b5a00a147fa8eb6ecbd7c028e21e9aaf8a156b4695f2"
+      sha256 "c495b29a09cf1bb30f86a2555fad7637859efbb9624ad7bede61ef66a6a46066"
 
       define_method(:install) do
         bin.install "observo"
@@ -19,7 +19,7 @@ class Observo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/observo-ai/observo-cli/releases/download/v0.8.0/observo_0.8.0_darwin_arm64.tar.gz"
-      sha256 "fc8f23b1101a89ac69664c11c96d6b3b8a855b9b5c47c8efe7bb82fd375631f3"
+      sha256 "9051461728d81e1dc3c4dd24520e99ecc6c8a7e4416251fe2d7db5d7da32f540"
 
       define_method(:install) do
         bin.install "observo"
@@ -30,14 +30,14 @@ class Observo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/observo-ai/observo-cli/releases/download/v0.8.0/observo_0.8.0_linux_amd64.tar.gz"
-      sha256 "b158d26537d614df88da094171c4844b2dbe2212d84f823942bc748683ee0465"
+      sha256 "bad32efe79536a2d51b040e9cff6f4bdd328ea826b061f6f92c7a9a1ed242d07"
       define_method(:install) do
         bin.install "observo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/observo-ai/observo-cli/releases/download/v0.8.0/observo_0.8.0_linux_arm64.tar.gz"
-      sha256 "a3e4ef477f42d93a77199924692c164a611c12c56cc9bb9357f0b35436715c86"
+      sha256 "fb34d112e3e633cd61a82790f663ae65ba49848912980e6abf4ed090429dc054"
       define_method(:install) do
         bin.install "observo"
       end
